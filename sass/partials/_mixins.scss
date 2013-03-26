@@ -1,0 +1,100 @@
+@function textColor($opacity:1){
+    @return rgba($base-color,$opacity)	}
+@function white($opacity:1){
+    @return rgba(255,255,255,$opacity)
+}
+@mixin ul-reset {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+
+@mixin link-colors() {
+  a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover { color: $hover-color; }
+    &:active { color: $active-color; }
+    &:visited { color: $visited-color; }
+    &:focus { color: $link-color; }
+  }
+}
+
+@mixin selection($c, $bg) {
+  ::-moz-selection {background: $bg; color:$c; text-shadow:none;}
+  ::selection {background: $bg; color:$c; text-shadow:none;}
+}
+@mixin leader($lines: 1, $line-height: $base-line-height, $property: margin) {
+  #{$property}-top: $lines * $line-height; }
+  
+@mixin trailer($lines: 1, $line-height: $base-line-height, $property: margin) {
+  #{$property}-bottom: $lines * $line-height; }
+
+@mixin padding-leader($lines: 1) {
+    padding-top: $base-line-height * $lines;
+}
+
+@mixin padding-trailer($lines: 1) {
+    padding-bottom: $base-line-height * $lines;
+}
+
+@mixin typeRules() {
+    color: $base-color;
+    font: {
+      family: $base-font;
+      size: $base-font-size;
+      weight: normal;
+    }
+    line-height: $base-line-height;
+    word-spacing: $word-spacing;
+    letter-spacing: $letter-spacing;
+    @include selection($selected-color, $selected-background);
+    @include link-colors();
+}
+
+@mixin pad ($pad:$base-pad) {
+  padding: $pad;
+}
+
+@mixin oc() {
+  *zoom: 1;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin ic() {
+  margin: 0 auto;
+  width: $inner-width;
+}
+
+@mixin h-ic($diff: 0) {
+  margin: 0 auto;
+  width: $inner-width + $diff;
+}
+
+@mixin fp() {
+  width: 100%;
+}
+
+@mixin cols($num:1) {
+  display: block;
+  float: left;
+  margin-right: 1.48248%;
+  width: 15.43127% * $num;
+
+  &:last-child { 
+    margin-right: 0; }
+}
+
+@mixin shift($num:1) {
+  margin-left: 16.91375% * $num;
+}

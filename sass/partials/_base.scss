@@ -1,0 +1,34 @@
+// Base Style Fyle
+
+
+// General Styles
+$background: rgb(255, 255, 255);
+
+// Type Rules
+$base-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-color: rgb(40, 40, 40);
+$base-font-size: 100%;
+$base-line-height: 1.3em;
+$word-spacing: -0.0em;
+$letter-spacing: 0.0em;
+
+$base-pad: $base-line-height;
+
+$link-color: $base-color;
+$hover-color: lighten($link-color, 20%);
+$active-color: $base-color;
+$visited-color: $link-color;
+$focus-color: $base-color;
+
+// Selection
+$selected-background: rgb(240, 87, 83);
+$selected-color: rgb(240, 240, 240);
+
+// Transitions
+
+$property : all;
+$duration : 250ms;
+$function : false;
+$delay    : false;
+
+@import "mixins";
