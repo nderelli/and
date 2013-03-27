@@ -3,5 +3,26 @@
 
 body {
 	background: $background;
-	@include typeRules();
+	@include type-rules();
+}
+
+@include select($selected-color, $selected-background);
+
+div.container {
+
+}
+
+header {
+
+	nav {
+		
+	}
+}
+
+section.content {
+
+}
+
+footer {
+	
 }

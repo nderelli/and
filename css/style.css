@@ -186,14 +186,6 @@ body {
   line-height: 1.3em;
   word-spacing: 0em;
   letter-spacing: 0em; }
-  body ::-moz-selection {
-    background: #f05753;
-    color: #f0f0f0;
-    text-shadow: none; }
-  body ::selection {
-    background: #f05753;
-    color: #f0f0f0;
-    text-shadow: none; }
   body a {
     color: #282828;
     text-decoration: none; }
@@ -205,3 +197,13 @@ body {
       color: #282828; }
     body a:focus {
       color: #282828; }
+
+::-moz-selection {
+  background: #f05753;
+  color: #f0f0f0;
+  text-shadow: none; }
+
+::selection {
+  background: #f05753;
+  color: #f0f0f0;
+  text-shadow: none; }
