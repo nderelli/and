@@ -40,7 +40,7 @@
     padding-bottom: $base-line-height * $lines;
 }
 
-@mixin typeRules() {
+@mixin type-rules() {
     color: $base-color;
     font: {
       family: $base-font;

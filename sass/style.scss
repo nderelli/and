@@ -1,40 +1,9 @@
 @import "partials/reset";
 @import "partials/base";
 
-html {
-	
-}
-
-@-webkit-keyframes fade-in {
-	0%   { opacity: 0; }
-	50%   { opacity: 0; }
-	100% { opacity: 1; }
-}
-
 body {
-	background: $background;
 	@include type-rules();
-	-webkit-animation-name: fade-in;
-	-webkit-animation-duration: 1.5s;
 }
 
-@include select($selected-color, $selected-background);
+@include selection($selected-color, $selected-background);
 
-div.container {
-
-}
-
-header {
-
-	nav {
-		
-	}
-}
-
-section.content {
-
-}
-
-footer {
-
-}
