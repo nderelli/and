@@ -132,6 +132,16 @@
   width: $percentage;
 }
 
+@mixin size($height, $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
 
 
 
