@@ -1,5 +1,6 @@
 .DS_Store
 *.scssc
+/components
 /bower_components
 /node_modules
 /test
