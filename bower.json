@@ -1,0 +1,15 @@
+{
+  "name": "and",
+  "version": "0.0.2",
+  "homepage": "https://github.com/nderelli/and",
+  "authors": [
+    "nderelli <peter@anderelli.com>"
+  ],
+  "description": "An evolving framework to test new tools and see how they all work together.",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.0.3"
+  }
+}
