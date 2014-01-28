@@ -2,10 +2,7 @@
 
 require.config({
 	paths: {
-		'jquery': [
-			"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min",
-			"../components/jquery/jquery.min"
-		],
+		'jquery': "../components/jquery/jquery.min",
 	}
 });
 
@@ -14,5 +11,8 @@ require.config({
 // Second argument is to what they are referring
 
 require(['jquery'], function($) {
-	// JQuery and other dependencies are loaded
+
+	// Log jquery to show that we're working
+
+	console.log($);
 });
