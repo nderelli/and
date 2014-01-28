@@ -1,0 +1,41 @@
+// Base Style Fyle
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+$verdana: Verdana, Geneva, sans-serif;
+
+
+$max-width: 1000px;
+
+// General Styles
+$background: rgb(255, 255, 255);
+
+// Type Rules
+$base-font: $georgia;
+$base-color: rgb(80, 80, 80);
+$base-font-size: 1.8;
+$base-line-height: 1.35;
+$word-spacing: -0.0em;
+$letter-spacing: 0.0em;
+
+$heading-color: rgb(20,20,20);
+
+$link-color: $base-color;
+$hover-color: lighten($link-color, 80%);
+$active-color: $base-color;
+$visited-color: $link-color;
+$focus-color: $base-color;
+
+// Selection
+$selected-background: rgb(240, 87, 83);
+$selected-color: rgb(240, 240, 240);
+
+// Transitions
+
+$property : all;
+$duration : 250ms;
+$function : false;
+$delay    : false;
+
+@import "mixins";

@@ -1,0 +1,71 @@
+
+@function textColor($opacity:1) { @return rgba($base-color,$opacity)  }
+@function white($opacity:1) { @return rgba(255,255,255,$opacity)  }
+@function inverse($num) { @return $num * -1 }
+@function strip-units($number) { @return $number / ($number * 0 + 1); }
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem; }
+
+@mixin leader($lines: 1, $line-height: $base-line-height, $property: margin) {
+  #{$property}-top: #{$lines * $line-height}em; }
+  
+@mixin trailer($lines: 1, $line-height: $base-line-height, $property: margin) {
+  #{$property}-bottom: #{$lines * $line-height}em; }
+
+@mixin padding-leader($lines: 1) {
+    padding-top: #{$base-line-height * $lines}em; }
+
+@mixin padding-trailer($lines: 1) {
+    padding-bottom: #{$base-line-height * $lines}em; }
+
+@mixin mq($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile-width) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $tablet-width) { @content; }
+  }
+  @else if $media == normal {
+    @media only screen and (max-width: $normal-width) { @content; }
+  }
+  @else if $media == big {
+    @media only screen and (min-width: $normal-width + 1) { @content; }
+  }
+  @else if $media == print {
+    @media only print { @content; } } }
+
+@mixin child($place, $nth: 2) {
+  @if $place == first {
+    &:first-child { @content; }
+  }
+  @else if $place == last {
+    &:last-child { @content; }
+  }
+  @else if $place == nth {
+    &:nth-child(#{$nth}) { @content; }
+  }
+  @else if $place == odd {
+    &:nth-child(odd) { @content; }
+  }
+  @else if $place == even {
+    &:nth-child(even) { @content; } } }
+
+@mixin ul-reset {
+  list-style: none;
+  margin: 0;
+  padding-bottom: 0; }
+
+@mixin fluid-square($percentage) {
+  height: 0;
+  padding-bottom: $percentage;
+  width: $percentage; }
+
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity); }
+
+
+
+
