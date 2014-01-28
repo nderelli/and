@@ -3,13 +3,17 @@
   "version": "0.0.2",
   "homepage": "https://github.com/nderelli/and",
   "authors": [
-    "nderelli <peter@anderelli.com>"
+    "nderelli <peter@nderelli.com>"
   ],
   "description": "An evolving framework to test new tools and see how they all work together.",
   "main": "index.html",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery": "~2.0.3"
+    "jquery": "~2.1.0",
+    "requirejs": "~2.1.10"
+  },
+  "resolutions": {
+    "jquery": "~2.1.0"
   }
 }
