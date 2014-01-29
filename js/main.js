@@ -10,9 +10,8 @@ require.config({
 // First argument is array of modules
 // Second argument is to what they are referring
 
-require(['jquery'], function($) {
+require(['App'], function(App) {
 
-	// Log jquery to show that we're working
+	App.init();
 
-	console.log($);
 });
